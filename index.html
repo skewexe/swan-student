@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SWAN GMAO Student - Apprenez la maintenance sur le vrai logiciel</title>
+  <meta name="description" content="SWAN GMAO Student : le logiciel de gestion de maintenance des services industriels, gratuit pour les étudiants. Ordres de travail, préventif, planning, checklists, CAPA et certificat. Hors ligne, pour Windows.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SWAN GMAO Student">
+  <meta property="og:description" content="Apprenez la maintenance sur le vrai logiciel. Gratuit pour les étudiants, hors ligne, Windows 10 et 11.">
+  <meta property="og:image" content="assets/img/shot-dashboard.png">
+  <link rel="icon" type="image/png" href="assets/img/icon.png">
+  <link rel="apple-touch-icon" href="assets/img/icon.png">
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="SWAN GMAO Student, accueil">
+        <img src="assets/img/logo.png" alt="SWAN" width="96" height="37">
+        <span class="brand-tag">Student</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
+        <a href="#logiciel">Le système</a>
+        <a href="#academie">Académie</a>
+        <a href="#fonctionnement">Cycle</a>
+        <a href="#faq">Questions</a>
+        <a class="nav-cta-mobile" href="#telecharger">Obtenir le logiciel</a>
+      </nav>
+      <a class="btn btn-line btn-sm nav-cta" href="#telecharger">Obtenir le logiciel</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- 01 HERO -->
+    <section class="hero" id="top">
+      <canvas class="hero-canvas" id="field" aria-hidden="true"></canvas>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-in">
+        <p class="kicker"><span>01</span> Édition étudiante</p>
+        <h1 class="hero-title" aria-label="Apprenez la maintenance sur le vrai logiciel.">
+          <span class="line"><span>Apprenez la</span></span>
+          <span class="line"><span>maintenance sur</span></span>
+          <span class="line"><span>le vrai logiciel.</span></span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-lead">SWAN GMAO Student est le logiciel de gestion de maintenance des services industriels, dans une édition gratuite pour les étudiants. Il fonctionne sur votre PC, sans Internet.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#telecharger">Obtenir le logiciel</a>
+            <a class="btn btn-line" href="#logiciel">Voir le système</a>
+          </div>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>8</strong><span>modules de cours</span></li>
+          <li><strong>78</strong><span>questions d'examen</span></li>
+          <li><strong>90 j</strong><span>par cycle de travail</span></li>
+          <li><strong>0 DA</strong><span>licence étudiante</span></li>
+        </ul>
+        <div class="scroll-cue" aria-hidden="true"><span>Défiler</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- 02 MANIFESTO -->
+    <section class="manifesto" aria-label="Notre idée">
+      <div class="wrap">
+        <p class="kicker"><span>02</span> Le principe</p>
+        <p class="words" id="words">Ce n'est pas une simulation. C'est le logiciel qu'utilisent les services maintenance, réduit à ce dont un étudiant a besoin pour apprendre, pratiquer et prouver ce qu'il sait faire.</p>
+      </div>
+    </section>
+
+    <!-- 03 SYSTEM (scrollytelling) -->
+    <section class="story" id="logiciel" aria-label="Le système">
+      <div class="wrap story-in">
+        <div class="stage" id="stage" aria-hidden="true">
+          <div class="stage-frame">
+            <img class="stage-img active" data-step="0" src="assets/img/shot-assets.png" alt="" width="1350" height="663" fetchpriority="low">
+            <img class="stage-img" data-step="1" src="assets/img/shot-workorders.png" alt="" width="1350" height="663" loading="lazy">
+            <img class="stage-img" data-step="2" src="assets/img/shot-planning.png" alt="" width="1350" height="663" loading="lazy">
+            <img class="stage-img" data-step="3" src="assets/img/shot-checklists.png" alt="" width="1350" height="663" loading="lazy">
+            <img class="stage-img" data-step="4" src="assets/img/shot-preventive.png" alt="" width="1350" height="663" loading="lazy">
+            <img class="stage-img" data-step="5" src="assets/img/shot-dashboard.png" alt="" width="1350" height="663" loading="lazy">
+          </div>
+          <div class="stage-meta"><span id="stage-index">01</span><i><b id="stage-bar"></b></i><span>06</span></div>
+        </div>
+
+        <ol class="steps" id="steps">
+          <li class="step active" data-step="0">
+            <p class="kicker"><span>03.1</span> Équipements</p>
+            <h2>Chaque machine a son dossier.</h2>
+            <p>Catégorie, localisation, criticité, historique, pièces associées. Tout ce qui s'est passé sur un équipement se retrouve au même endroit.</p>
+            <figure class="step-img"><img src="assets/img/shot-assets.png" alt="Liste des équipements avec statut et criticité" width="1350" height="663" loading="lazy"></figure>
+          </li>
+          <li class="step" data-step="1">
+            <p class="kicker"><span>03.2</span> Ordres de travail</p>
+            <h2>Chaque panne devient un ordre.</h2>
+            <p>Priorité, technicien, pièces consommées, heures passées. Le stock se met à jour et l'état de l'équipement suit l'intervention.</p>
+            <figure class="step-img"><img src="assets/img/shot-workorders.png" alt="Liste des ordres de travail" width="1350" height="663" loading="lazy"></figure>
+          </li>
+          <li class="step" data-step="2">
+            <p class="kicker"><span>03.3</span> Planning</p>
+            <h2>Chaque ordre trouve son créneau.</h2>
+            <p>Un diagramme de Gantt par technicien, la charge de chacun, les conflits détectés, les absences et les jours fériés pris en compte.</p>
+            <figure class="step-img"><img src="assets/img/shot-planning.png" alt="Diagramme de Gantt du planning des ressources" width="1350" height="663" loading="lazy"></figure>
+          </li>
+          <li class="step" data-step="3">
+            <p class="kicker"><span>03.4</span> Checklists</p>
+            <h2>Chaque contrôle se remplit à l'écran.</h2>
+            <p>OK, NOK, mesures comparées à leurs limites. Un point critique non conforme ouvre une action corrective, un point obligatoire sans réponse bloque la clôture.</p>
+            <figure class="step-img"><img src="assets/img/shot-checklists.png" alt="Modèles de checklists à remplir en ligne" width="1350" height="663" loading="lazy"></figure>
+          </li>
+          <li class="step" data-step="4">
+            <p class="kicker"><span>03.5</span> Préventif</p>
+            <h2>Chaque échéance se prépare.</h2>
+            <p>Des plans périodiques par équipement, générés en ordres au bon moment, avec le suivi de ce qui est en retard.</p>
+            <figure class="step-img"><img src="assets/img/shot-preventive.png" alt="Plans de maintenance préventive" width="1350" height="663" loading="lazy"></figure>
+          </li>
+          <li class="step" data-step="5">
+            <p class="kicker"><span>03.6</span> Indicateurs</p>
+            <h2>Chaque chiffre vient de ce que vous saisissez.</h2>
+            <p>Disponibilité, MTBF, MTTR, stock en alerte, actions correctives. Rien n'est inventé : les indicateurs se calculent sur vos propres interventions.</p>
+            <figure class="step-img"><img src="assets/img/shot-dashboard.png" alt="Tableau de bord des indicateurs" width="1350" height="663" loading="lazy"></figure>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04 ACADEMY -->
+    <section class="academy" id="academie">
+      <div class="wrap academy-in">
+        <header class="academy-head">
+          <p class="kicker"><span>04</span> Académie intégrée</p>
+          <h2>Du cours au certificat, sans quitter le logiciel.</h2>
+          <p>Le parcours est inclus. Il ne demande aucune inscription supplémentaire et fonctionne hors ligne.</p>
+        </header>
+        <ol class="rail" id="rail">
+          <li><span class="rail-n">01</span><div><h3>Huit modules</h3><p>De la structure d'une GMAO à l'analyse des défaillances. Chaque module se termine par un quiz corrigé.</p></div></li>
+          <li><span class="rail-n">02</span><div><h3>Exercices pratiques</h3><p>Créez un équipement, traitez un ordre, planifiez une visite. Les actions sont vérifiées dans le logiciel lui-même.</p></div></li>
+          <li><span class="rail-n">03</span><div><h3>Examen chronométré</h3><p>Questions tirées au hasard, réponses mélangées, nombre de tentatives limité, correction à la fin.</p></div></li>
+          <li><span class="rail-n">04</span><div><h3>Certificat de réussite</h3><p>Une attestation numérotée à votre nom, à imprimer ou à enregistrer en PDF.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 04b SCENARIOS -->
+    <section class="scen" id="scenarios" aria-label="Scénarios industriels">
+      <div class="wrap">
+        <header class="academy-head">
+          <p class="kicker"><span>05</span> Scénarios industriels</p>
+          <h2>Une usine fictive pour s'entraîner pour de bon.</h2>
+          <p>Un interrupteur charge la Laiterie Atlas : 38 équipements, 12 techniciens, un an d'historique. Huit missions de métier à résoudre avec les vrais écrans. Quand vous le coupez, votre travail revient à l'identique.</p>
+        </header>
+        <figure class="scen-shot"><img src="assets/img/shot-scenarios.png" alt="Les missions du mode scénarios : panne de remplisseuse, préventif en retard, pénurie de pièces, arrêt annuel" width="1350" height="663" loading="lazy"></figure>
+        <ul class="scen-grid">
+          <li><h3>Des données qui ressemblent à l'usine</h3><p>Pannes qui se répètent, plans en retard, pièces sous leur seuil, techniciens absents : tout est généré avec ses liens.</p></li>
+          <li><h3>Huit situations de métier</h3><p>De l'arrêt d'une ligne de remplissage au pilotage du budget pièces, en passant par l'arrêt annuel et l'audit sécurité.</p></li>
+          <li><h3>Corrigé sur ce que vous faites</h3><p>Chaque objectif est lu dans les données : le bon technicien, la bonne checklist, le bon créneau. Deux indices par objectif.</p></li>
+          <li><h3>Votre version normale reste intacte</h3><p>Le mode met votre travail de côté en entier et le restitue tel quel en le quittant. Vos scores restent.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 NUMBERS -->
+    <section class="numbers" aria-label="En chiffres">
+      <div class="wrap numbers-in">
+        <div><strong data-count="8">8</strong><span>modules de cours</span></div>
+        <div><strong data-count="78">78</strong><span>questions dans la banque d'examen</span></div>
+        <div><strong data-count="90">90</strong><span>jours par cycle de travail</span></div>
+        <div><strong data-count="0">0</strong><span>dinar de licence pour un étudiant</span></div>
+      </div>
+    </section>
+
+    <!-- 06 CYCLE -->
+    <section class="cycle" id="fonctionnement">
+      <div class="wrap cycle-in">
+        <header>
+          <p class="kicker"><span>06</span> Fonctionnement</p>
+          <h2>Trois étapes. Moins de cinq minutes.</h2>
+        </header>
+        <ol class="cycle-steps">
+          <li class="rv"><span>1</span><h3>Inscrivez-vous</h3><p>Cinq champs, trente secondes. Cela nous permet de savoir dans quels établissements le logiciel est utilisé.</p></li>
+          <li class="rv"><span>2</span><h3>Téléchargez</h3><p>Le fichier d'installation se télécharge directement, sans compte et sans redirection.</p></li>
+          <li class="rv"><span>3</span><h3>Installez et travaillez</h3><p>Tout est dans le fichier : aucun autre logiciel à installer, aucune connexion nécessaire.</p></li>
+        </ol>
+        <div class="cycle-note rv">
+          <h3>Un cycle de travail de 90 jours</h3>
+          <p>Pour garder l'esprit d'un apprentissage, vos données de travail (équipements, ordres, stock, plans) sont remises à zéro tous les 90 jours. Votre compte, vos résultats et vos certificats sont conservés. La date est vérifiée sur Internet quand une connexion est disponible.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 DOWNLOAD -->
+    <section class="download" id="telecharger">
+      <div class="wrap dl-in">
+        <div class="dl-copy">
+          <p class="kicker"><span>07</span> Téléchargement gratuit</p>
+          <h2>Obtenez SWAN GMAO Student.</h2>
+          <p class="dl-lead">Remplissez le formulaire pour débloquer le téléchargement. Le fichier est un installateur unique, prêt à lancer.</p>
+          <dl class="specs">
+            <div><dt>Version</dt><dd id="meta-version">1.0.0</dd></div>
+            <div><dt>Fichier</dt><dd id="meta-size">environ 90 Mo</dd></div>
+            <div><dt>Système</dt><dd>Windows 10 ou 11, 64 bits</dd></div>
+            <div><dt>Disque</dt><dd>environ 300 Mo</dd></div>
+            <div><dt>Connexion</dt><dd>Non requise pour travailler</dd></div>
+            <div><dt>Licence</dt><dd>Gratuite, usage pédagogique</dd></div>
+          </dl>
+          <p class="fine">Tout est contenu dans l'installateur : l'interface, le serveur local et la base de données. Aucun autre logiciel n'est nécessaire.</p>
+        </div>
+
+        <div class="dl-card" id="dl-card">
+          <div id="form-view">
+            <h3>Vos informations</h3>
+            <p class="muted">Tous les champs sont obligatoires.</p>
+            <form id="reg" novalidate autocomplete="on">
+              <div class="field">
+                <label for="fullName">Nom et prénom</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required minlength="3" maxlength="120" placeholder="Prénom Nom">
+                <p class="err" data-for="fullName"></p>
+              </div>
+              <div class="field">
+                <label for="email">Adresse e-mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160" placeholder="prenom.nom@univ.dz">
+                <p class="err" data-for="email"></p>
+              </div>
+              <div class="field">
+                <label for="university">Université ou école</label>
+                <input id="university" name="university" type="text" autocomplete="organization" required minlength="2" maxlength="160" placeholder="Nom de votre université ou de votre école">
+                <p class="err" data-for="university"></p>
+              </div>
+              <div class="field">
+                <label for="major">Filière ou spécialité</label>
+                <input id="major" name="major" type="text" list="majors" required minlength="2" maxlength="160" placeholder="Votre spécialité">
+                <datalist id="majors">
+                  <option value="Maintenance industrielle"></option><option value="Génie mécanique"></option><option value="Génie électrique"></option><option value="Électrotechnique"></option>
+                  <option value="Automatique"></option><option value="Génie industriel"></option><option value="Électromécanique"></option><option value="Génie des procédés"></option>
+                  <option value="Réseaux et télécommunications"></option><option value="Informatique industrielle"></option><option value="Hygiène et sécurité industrielle"></option>
+                </datalist>
+                <p class="err" data-for="major"></p>
+              </div>
+              <div class="field">
+                <label for="level">Niveau d'études</label>
+                <select id="level" name="level" required>
+                  <option value="">Choisir un niveau</option>
+                  <option>Licence 1</option><option>Licence 2</option><option>Licence 3</option>
+                  <option>Master 1</option><option>Master 2</option>
+                  <option>Ingénieur</option><option>Technicien supérieur</option><option>Doctorat</option><option>Autre</option>
+                </select>
+                <p class="err" data-for="level"></p>
+              </div>
+              <!-- trap for automated submissions: invisible to people -->
+              <div class="hp" aria-hidden="true"><label>Site web<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+              <div class="field field-check">
+                <label class="check"><input id="consent" name="consent" type="checkbox" required>
+                  <span>Je suis étudiant et j'utiliserai ce logiciel pour mon apprentissage, hors usage commercial. J'accepte que ces informations soient enregistrées par SWAN pour le suivi de la diffusion et l'envoi des mises à jour.</span>
+                </label>
+                <p class="err" data-for="consent"></p>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <button class="btn btn-solid btn-block" id="submit" type="submit">
+                <span class="btn-label">Débloquer le téléchargement</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+              <p class="fine">Vos informations ne sont ni revendues ni partagées. Pour les faire supprimer, écrivez à <a id="contact-link" href="mailto:souanekhaledibnelwalid@gmail.com">souanekhaledibnelwalid@gmail.com</a>.</p>
+            </form>
+          </div>
+
+          <div id="done-view" hidden aria-live="polite">
+            <p class="kicker"><span>OK</span> Inscription enregistrée</p>
+            <h3 id="thanks">Merci, votre téléchargement est prêt.</h3>
+            <p class="muted">Le fichier s'enregistre directement sur votre ordinateur.</p>
+            <a class="btn btn-solid btn-block btn-xl" id="download" href="#" rel="noopener">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" aria-hidden="true"><path d="M12 3v13m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+              <span>Télécharger pour Windows</span>
+            </a>
+            <p class="file-line"><span id="file-name">SWAN-GMAO-Student-Setup-1.0.0.exe</span><span id="file-size"></span></p>
+            <p class="form-error" id="dl-error" role="alert" hidden></p>
+            <div class="install">
+              <h4>Après le téléchargement</h4>
+              <ol>
+                <li>Ouvrez le fichier téléchargé.</li>
+                <li>Si Windows affiche « Windows a protégé votre ordinateur », choisissez <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>. Le logiciel est en cours de signature numérique : cet avertissement est normal.</li>
+                <li>Suivez l'assistant, puis créez votre compte étudiant au premier lancement.</li>
+              </ol>
+            </div>
+            <div class="sum" id="sum-row" hidden>
+              <span>Empreinte SHA-256</span><code id="sha"></code>
+            </div>
+            <p class="fine">Un problème ? Écrivez-nous : <a id="help-link" href="mailto:souanekhaledibnelwalid@gmail.com">souanekhaledibnelwalid@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="wrap faq-in">
+        <header>
+          <p class="kicker"><span>07</span> Questions</p>
+          <h2>Ce que les étudiants demandent.</h2>
+        </header>
+        <div class="faq">
+          <details><summary>Est-ce vraiment gratuit ?</summary><p>Oui. L'édition étudiante est gratuite pour un usage pédagogique : cours, travaux pratiques, projets de fin d'études. Elle ne demande aucun paiement.</p></details>
+          <details><summary>Faut-il une connexion Internet ?</summary><p>Non, pas pour travailler. Le logiciel fonctionne entièrement sur votre PC. Une connexion occasionnelle lui permet seulement de vérifier la date pour le cycle de 90 jours.</p></details>
+          <details><summary>Que se passe-t-il au bout de 90 jours ?</summary><p>Vos données de travail (équipements, ordres, stock, plans) sont remises à zéro pour repartir sur un cycle neuf. Votre compte, vos résultats de cours et vos certificats sont conservés.</p></details>
+          <details><summary>Windows affiche un avertissement au lancement, est-ce normal ?</summary><p>Oui. Le fichier n'est pas encore signé par un certificat d'éditeur payant, donc SmartScreen demande une confirmation la première fois. Choisissez Informations complémentaires puis Exécuter quand même. Pour vérifier le fichier, comparez son empreinte SHA-256 avec celle affichée après l'inscription.</p></details>
+          <details><summary>Mon antivirus bloque le fichier, que faire ?</summary><p>Ajoutez le dossier d'installation à ses exclusions, ou autorisez le fichier, puis relancez l'installation. Le logiciel fonctionne uniquement en local et n'envoie aucune donnée.</p></details>
+          <details><summary>Où sont enregistrées mes données ?</summary><p>Sur votre ordinateur, dans votre profil Windows. Rien n'est envoyé vers un serveur. Gardez une copie de vos travaux importants.</p></details>
+          <details><summary>Puis-je l'utiliser en entreprise ?</summary><p>Non, l'édition étudiante est réservée à l'apprentissage. Une édition pour les entreprises et les universités existe : écrivez-nous pour la découvrir.</p></details>
+          <details><summary>Et sur Mac, Linux ou téléphone ?</summary><p>Pour l'instant, le logiciel étudiant fonctionne sous Windows 10 et 11 en 64 bits uniquement.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="SWAN" width="96" height="37">
+        <p>La gestion de maintenance conçue en Algérie pour l'industrie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#logiciel">Le système</a><a href="#academie">Académie</a><a href="#telecharger">Télécharger</a><a href="#faq">Questions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a id="footer-mail" href="mailto:souanekhaledibnelwalid@gmail.com">souanekhaledibnelwalid@gmail.com</a>
+        <a href="tel:+213778628449">+213 7 78 62 84 49</a>
+        <span>Oran, Algérie</span>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <span>&copy; <span id="year">2026</span> SWAN Industrial Intelligence. Tous droits réservés.</span>
+      <span>Édition étudiante : usage pédagogique et non commercial.</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="release-info.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
