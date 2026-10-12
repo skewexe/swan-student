@@ -203,6 +203,11 @@ form { margin-top: 30px; display: grid; gap: 22px; }
 .install li { counter-increment: i; position: relative; padding-left: 38px; font-size: 14.5px; line-height: 1.6; color: #b4b9c4; }
 .install li::before { content: counter(i, decimal-leading-zero); position: absolute; left: 0; top: 0; font-size: 12px; letter-spacing: .12em; color: var(--mute); font-variant-numeric: tabular-nums; }
 .install strong { color: #fff; font-weight: 600; }
+.install .why { margin-top: 22px; border: 1px solid var(--line); padding: 14px 18px; }
+.install .why summary { cursor: pointer; color: #fff; font-size: 14px; font-weight: 600; }
+.install .why p { margin: 12px 0; font-size: 14px; line-height: 1.6; color: #b4b9c4; }
+.install .why ol { margin: 8px 0 12px; }
+.install code { font-family: ui-monospace, Consolas, monospace; font-size: 12.5px; background: rgba(255,255,255,.08); padding: 2px 6px; word-break: break-all; }
 .sum { margin-top: 24px; border: 1px solid var(--line); padding: 14px 16px; display: grid; gap: 6px; }
 .sum span { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
 .sum code { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 11.5px; word-break: break-all; color: #b4b9c4; }

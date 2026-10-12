@@ -284,10 +284,19 @@
             <div class="install">
               <h4>Après le téléchargement</h4>
               <ol>
-                <li>Ouvrez le fichier téléchargé.</li>
-                <li>Si Windows affiche « Windows a protégé votre ordinateur », choisissez <strong>Informations complémentaires</strong>, puis <strong>Exécuter quand même</strong>. Le logiciel est en cours de signature numérique : cet avertissement est normal.</li>
+                <li>Si votre navigateur dit que le fichier « n'est pas téléchargé couramment », ouvrez le menu du téléchargement et choisissez <strong>Conserver</strong>.</li>
+                <li>Ouvrez le fichier. Windows peut afficher un écran bleu « <strong>Windows a protégé votre ordinateur</strong> » : cliquez sur le lien <strong>Informations complémentaires</strong> (sous le texte), puis sur le bouton <strong>Exécuter quand même</strong>.</li>
                 <li>Suivez l'assistant, puis créez votre compte étudiant au premier lancement.</li>
               </ol>
+              <details class="why">
+                <summary>Je ne vois pas « Exécuter quand même », ou l'installation ne démarre pas</summary>
+                <p>Cet avertissement apparaît pour tout programme récent qui n'a pas encore été téléchargé par beaucoup de personnes. Il ne signifie pas que le fichier est dangereux. Vous pouvez le vérifier avec l'empreinte SHA-256 ci-dessous. Deux autres façons de continuer :</p>
+                <ol>
+                  <li><strong>Débloquer le fichier :</strong> clic droit sur le fichier téléchargé, <strong>Propriétés</strong>, cochez <strong>Débloquer</strong> en bas de l'onglet Général, puis <strong>OK</strong>. Relancez ensuite le fichier.</li>
+                  <li><strong>Avec PowerShell :</strong> ouvrez PowerShell dans le dossier Téléchargements et tapez <code>Unblock-File .\SWAN-GMAO-Student-Setup-1.0.0.exe</code>, puis lancez le fichier.</li>
+                </ol>
+                <p>Sur un ordinateur géré par un établissement, SmartScreen peut être verrouillé par l'administrateur : installez alors le logiciel sur votre ordinateur personnel.</p>
+              </details>
             </div>
             <div class="sum" id="sum-row" hidden>
               <span>Empreinte SHA-256</span><code id="sha"></code>
